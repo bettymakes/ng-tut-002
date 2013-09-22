@@ -46,9 +46,9 @@
 					<div class="row session">
 						<div class="col-md-1">
 							<ul class="list-unstyled">
-								<li>&#8743;</li>
+								<li ng-click="upVoteSession(session)">&#8743;</li>
 								<li>{{session.upVoteCount}}</li>
-								<li>&#8744;</li>
+								<li ng-click="downVoteSession(session)">&#8744;</li>
 							</ul>
 						</div>
 						<div class="well col-md-11">
