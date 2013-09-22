@@ -19,21 +19,24 @@ eventsApp.controller('eventsController',
 					creatorName: "Jon Doe",
 					duration: "2 hours",
 					level: "Super Smart",
-					abstract: "In this session, you'll learn the ins and outs of directives! Yay!"
+					abstract: "In this session, you'll learn the ins and outs of directives! Yay!",
+					upVoteCount: 0
 				},
 				{
 					name: "Scopes for fun and profit",
 					creatorName: "Mulan Fah",
 					duration: "1.5 hours",
 					level: "Dummies",
-					abstract: "In this session, you'll learn how to scope stuff for fun and profit!"
+					abstract: "In this session, you'll learn how to scope stuff for fun and profit!",
+					upVoteCount: 0
 				},
 				{
 					name: "Well Behaved Controllers",
 					creatorName: "Pika Chu",
 					duration: "5 hours",
 					level: "Mediocre",
-					abstract: "In this session, you'll learn about well behaved controllers and cool stuff like that for a really long time!"
+					abstract: "In this session, you'll learn about well behaved controllers and cool stuff like that for a really long time!",
+					upVoteCount: 0
 				}
 			]
 		}
