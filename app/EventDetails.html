@@ -16,15 +16,26 @@
 	</div>
 	<div class="container">
 		<div ng-controller="eventsController">
+			<img ng-src="{{event.imageUrl}}"/>
 			<div class="row">
-				<div class="span11">
+				<div class="col-md-11">
 					<h2>{{event.name}}</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="span3">
+				<div class="col-md-3">
 					<div><strong>Date:</strong> {{event.date}}</div>
 					<div><strong>Time:</strong> {{event.time}}</div>
+				</div>
+				<div class="col-md-4">
+					<address>
+						<strong>Address:</strong>
+						<br/>
+						<ul>
+							<li>{{event.location.address}}</li>
+							<li>{{event.location.city}}, {{event.location.state}}</li>
+						</ul>
+					</address>
 				</div>
 			</div>
 		</div>

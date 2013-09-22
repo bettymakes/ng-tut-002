@@ -11,8 +11,8 @@ eventsApp.controller('eventsController',
 				address: '62 Yoyo Drive',
 				city: 'Mountain View',
 				state: 'California',
-				
-			}
+			},
+			imageUrl: '/app/img/egg.jpg'
 		}
  	}
 );
