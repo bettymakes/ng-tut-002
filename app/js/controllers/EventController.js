@@ -1,3 +1,3 @@
 'use strict';
 
-eventsApp.controller('EventController', function EventController($scope) {})
+eventsApp.controller('eventsController', function eventsController($scope) {})
