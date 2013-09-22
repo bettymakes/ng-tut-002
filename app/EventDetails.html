@@ -19,7 +19,7 @@
 			<img ng-src="{{event.imageUrl}}"/>
 			<div class="row">
 				<div class="col-md-11">
-					<h2 ng-bind="event.name"></h2>
+					<h2 ng-bind-template="{{event.name}} on {{event.date}}"></h2>
 				</div>
 			</div>
 			<div class="row">
