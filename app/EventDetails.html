@@ -31,13 +31,25 @@
 					<address>
 						<strong>Address:</strong>
 						<br/>
-						<ul>
+						<ul class="list-unstyled">
 							<li>{{event.location.address}}</li>
 							<li>{{event.location.city}}, {{event.location.state}}</li>
 						</ul>
 					</address>
 				</div>
 			</div>
+
+			<hr />
+			<h3>Sessions</h3>
+			<ul class="thumbnails list-unstyled">
+				<li ng-repeat="session in event.sessions">
+					<div class="row session">
+						<div class="well col-md-9">
+							<h4 class="well-title">{{session.name}}</h4>
+						</div>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</div>
 

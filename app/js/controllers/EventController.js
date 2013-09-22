@@ -12,7 +12,18 @@ eventsApp.controller('eventsController',
 				city: 'Mountain View',
 				state: 'California',
 			},
-			imageUrl: '/app/img/egg.jpg'
+			imageUrl: '/app/img/egg.jpg',
+			sessions: [
+				{
+					name: "Directives Masterclass"
+				},
+				{
+					name: "Scopes for fun and profit"
+				},
+				{
+					name: "Well Behaved Controllers"
+				}
+			]
 		}
  	}
 );
