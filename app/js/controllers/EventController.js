@@ -15,13 +15,25 @@ eventsApp.controller('eventsController',
 			imageUrl: '/app/img/egg.jpg',
 			sessions: [
 				{
-					name: "Directives Masterclass"
+					name: "Directives Masterclass",
+					creatorName: "Jon Doe",
+					duration: "2 hours",
+					level: "Super Smart",
+					abstract: "In this session, you'll learn the ins and outs of directives! Yay!"
 				},
 				{
-					name: "Scopes for fun and profit"
+					name: "Scopes for fun and profit",
+					creatorName: "Mulan Fah",
+					duration: "1.5 hours",
+					level: "Dummies",
+					abstract: "In this session, you'll learn how to scope stuff for fun and profit!"
 				},
 				{
-					name: "Well Behaved Controllers"
+					name: "Well Behaved Controllers",
+					creatorName: "Pika Chu",
+					duration: "5 hours",
+					level: "Mediocre",
+					abstract: "In this session, you'll learn about well behaved controllers and cool stuff like that for a really long time!"
 				}
 			]
 		}
