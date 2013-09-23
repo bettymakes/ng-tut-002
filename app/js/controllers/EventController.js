@@ -4,7 +4,7 @@ eventsApp.controller('eventsController',
 	function eventsController($scope) {
 
 		$scope.snippet='<span style="color:red">hi there!</span>';
-		$scope.booleanVal=false;
+		$scope.booleanVal=true;
 		$scope.event = {
 			name: 'Angular Boot Camp',
 			date: '12/25/2013',
@@ -49,6 +49,16 @@ eventsApp.controller('eventsController',
 
 		$scope.downVoteSession = function(session) {
 			session.upVoteCount--;
+		};
+
+		$scope.showHideFunc = function(){
+			if ($scope.booleanVal === true){
+				$scope.booleanVal = false;
+			} 
+			else{
+				$scope.booleanVal = true;
+			}
+			console.log($scope.booleanVal);
 		};
  	}
 );
