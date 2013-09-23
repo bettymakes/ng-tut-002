@@ -5,6 +5,7 @@ eventsApp.controller('eventsController',
 
 		$scope.snippet='<span style="color:red">hi there!</span>';
 		$scope.booleanVal=true;
+		$scope.booleanVal2=true;
 		$scope.event = {
 			name: 'Angular Boot Camp',
 			date: '12/25/2013',
@@ -22,6 +23,7 @@ eventsApp.controller('eventsController',
 					duration: "2 hours",
 					level: "Super Smart",
 					abstract: "In this session, you'll learn the ins and outs of directives! Yay!",
+					booleanVal2: true,
 					upVoteCount: 0
 				},
 				{
@@ -30,6 +32,7 @@ eventsApp.controller('eventsController',
 					duration: "1.5 hours",
 					level: "Dummies",
 					abstract: "In this session, you'll learn how to scope stuff for fun and profit!",
+					booleanVal2: true,
 					upVoteCount: 0
 				},
 				{
@@ -38,6 +41,7 @@ eventsApp.controller('eventsController',
 					duration: "5 hours",
 					level: "Mediocre",
 					abstract: "In this session, you'll learn about well behaved controllers and cool stuff like that for a really long time!",
+					booleanVal2: true,
 					upVoteCount: 0
 				}
 			]
@@ -60,5 +64,26 @@ eventsApp.controller('eventsController',
 			}
 			console.log($scope.booleanVal);
 		};
+
+		$scope.showHideFunc2 = function(session){
+			if (session.booleanVal2 === true){
+				session.booleanVal2 = false;
+			} 
+			else{
+				session.booleanVal2 = true;
+			}
+			console.log(session.booleanVal2);
+		};
+
+		// $scope.showHideFunc = function(x){
+		// 	if ($scope.x === true){
+		// 		$scope.x = false;
+		// 	} 
+		// 	else{
+		// 		$scope.x = true;
+		// 	}
+		// 	console.log($scope.x);
+		// 	console.log(x);
+		// };
  	}
 );

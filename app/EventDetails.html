@@ -54,8 +54,9 @@
 								<li>{{session.upVoteCount}}</li>
 								<li ng-click="downVoteSession(session)" style="cursor: pointer;">&#8744;</li>
 							</ul>
+							<button ng-click="showHideFunc2(session)">Press</button>
 						</div>
-						<div class="well col-md-11">
+						<div class="well col-md-11" ng-show="session.booleanVal2">
 							<h4 class="well-title">{{session.name}}</h4>						
 							<h6>Creator: {{session.creatorName}}</h6>
 							<span>Duration: {{session.duration}}</span>
