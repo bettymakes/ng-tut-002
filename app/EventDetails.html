@@ -45,8 +45,14 @@
 
 			<hr />
 			<h3>Sessions</h3>
+			<select ng-model="customSort" >
+				<option selected="selected" value="creatorName">Creator</option>
+				<option value="duration">Duration</option>
+				<option value="title">Title</option>
+				<option value="-upVoteCount">Votes</option>
+			</select>
 			<ul class="thumbnails list-unstyled">
-				<li ng-repeat="session in event.sessions | orderBy: 'upVoteCount': reverse=true ">
+				<li ng-repeat="session in event.sessions | orderBy: customSort">
 					<div class="row session">
 						<div class="col-md-1">
 							<ul class="list-unstyled">

@@ -2,7 +2,7 @@
 
 eventsApp.controller('eventsController', 
 	function eventsController($scope) {
-
+		$scope.customSort = "creatorName";
 		$scope.snippet='<span style="color:red">hi there!</span>';
 		$scope.booleanVal=true;
 		$scope.booleanVal2=true;
