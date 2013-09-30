@@ -1,1 +1,62 @@
-newEvent.html
+<!doctype html>
+<html lang="en" ng-app="eventsApp">
+<head>
+	<meta charset = "utf-8">
+	<title>Event Registration</title>
+	<link rel="stylesheet" type="text/css" href="/app/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/app/css/app.css"/>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<ul class="nav">
+					<li><a href="/newEvent.html">Create New Event</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div ng-controller="editEventCtrl">
+		<div class="container">
+			<h1>New Event</h1>
+			<hr>
+			<form>
+				<fieldset>
+					<label for="eventName">Event Name:</label>
+					<input id="eventName" type="text" placeholder="Enter Event Name"/>
+					<label for="eventDate">Event Date:</label>
+					<input id="eventDate" type="text" placeholder="Enter Date. Format mm/dd/yy"/>
+					<label for="eventTime">Event Time:</label>
+					<input id="eventTime" type="text" placeholder="Enter Start and End Time"/>
+					<label for="eventLocation">Event Location:</label>
+					<input id="eventLocation" type="text" placeholder="Enter Location"/>
+					<br>
+
+					<input id="eventCity" type="text" placeholder="City"/>
+					<input id="eventProvince" type="text" placeholder="Province"/>
+
+					<label for="eventImageUrl">Image:</label>
+					<input id="eventImageUrl" type="text" placeholder="Url for Image"/>					
+
+				</fieldset>
+
+				<img ng-src=""/>
+				<br>
+				<br>
+
+				<button type ="submit">Save</button>
+				<button type="button">Cancel</button>
+			</form>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/app/lib/jquery.js"></script>
+	<script type="text/javascript" src="/app/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/app/lib/angular/angular.js"></script>
+	<script type="text/javascript" src="/app/lib/angular/angular-sanitize.min.js"></script>
+	<script type="text/javascript" src="/app/js/app.js"></script>
+	<script type="text/javascript" src="/app/js/controllers/eventController.js"></script>
+	<script type="text/javascript" src="/app/js/filters.js"></script>
+	<script type="text/javascript" src="/app/js/controllers/editEventCtrl.js"></script>
+</body>
+</html>
